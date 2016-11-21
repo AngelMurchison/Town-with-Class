@@ -21,8 +21,8 @@ namespace town
         public double Length { get; set; }
         public int SquareFootage { get; set; }
         public int Floors { get; set; }
-        public int BedRooms { get; set; }
         public int BathRooms { get; }
+        public int BedRooms { get; set; }
         public int Volume { get; set; }
         public string Address1 { get; }
         public string Address2 { get; }
@@ -44,7 +44,6 @@ namespace town
         {
             return CurrentOccupants -= 1;
         }
-
         public string DisplayName()
         {
             return $"{Name}";
