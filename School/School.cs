@@ -43,6 +43,10 @@ class School
         {
             return CurrentOccupants -= 1;
         }
+        public int NumberofStudents { get; set; }
+        public bool InSession { get; set; }
+        public int NumberofTeachers { get; set; }
+
         public string DisplayName()
         {
             return $"{Name}";
