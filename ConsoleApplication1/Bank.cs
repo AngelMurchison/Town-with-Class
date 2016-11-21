@@ -8,6 +8,10 @@ namespace town
 {
     class Bank
     {
+        public Bank()
+        {
+            BuildingType = $"{BuildingType}";
+        }
         public string Name { get; set; }
         public string BuildingType { get; set; }
         public int NumberOfRooms { get; set; }
@@ -38,6 +42,15 @@ namespace town
         public int DecreaseOccupants()
         {
             return CurrentOccupants -= 1;
+        }
+        private double AmountofMoney { get; set; }
+        public double DepositMoney(double deposit)
+        {
+            return AmountofMoney + deposit;
+        }
+        public double WithdrawMoney(double withdrawn)
+        {
+            return AmountofMoney - withdrawn;
         }
         public string DisplayName()
         {

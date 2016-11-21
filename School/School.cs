@@ -8,6 +8,10 @@ namespace town
 {
 class School
     {
+        public School()
+        {
+            BuildingType = $"{BuildingType}";
+        }
         public string Name { get; set; }
         public string BuildingType { get; set; }
         public int NumberOfRooms { get; set; }
