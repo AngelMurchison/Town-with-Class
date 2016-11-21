@@ -1,1 +1,6 @@
 c:\users\angel murchison\documents\visual studio 2015\Projects\townClass\townClass\bin\Debug\townClass.exe.config
+c:\users\angel murchison\documents\visual studio 2015\Projects\townClass\townClass\bin\Debug\townClass.exe
+c:\users\angel murchison\documents\visual studio 2015\Projects\townClass\townClass\bin\Debug\townClass.pdb
+c:\users\angel murchison\documents\visual studio 2015\Projects\townClass\townClass\obj\Debug\townClass.csprojResolveAssemblyReference.cache
+c:\users\angel murchison\documents\visual studio 2015\Projects\townClass\townClass\obj\Debug\townClass.exe
+c:\users\angel murchison\documents\visual studio 2015\Projects\townClass\townClass\obj\Debug\townClass.pdb
