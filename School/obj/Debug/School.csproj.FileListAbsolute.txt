@@ -1,0 +1,5 @@
+C:\Users\Angel Murchison\documents\visual studio 2015\Projects\townClass\School\bin\Debug\School.exe.config
+C:\Users\Angel Murchison\documents\visual studio 2015\Projects\townClass\School\bin\Debug\School.exe
+C:\Users\Angel Murchison\documents\visual studio 2015\Projects\townClass\School\bin\Debug\School.pdb
+C:\Users\Angel Murchison\documents\visual studio 2015\Projects\townClass\School\obj\Debug\School.exe
+C:\Users\Angel Murchison\documents\visual studio 2015\Projects\townClass\School\obj\Debug\School.pdb
