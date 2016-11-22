@@ -8,9 +8,9 @@ namespace town
 {
 class School
     {
-        public School()
+        public School(string buildingtype)
         {
-            BuildingType = $"{BuildingType}";
+            this.BuildingType = buildingtype;
         }
 
         public string Name { get; set; }
@@ -83,7 +83,7 @@ class School
             return a;
         }
 
-        string teacherToStudentRatio(int a, int b)
+        public string teacherToStudentRatio(int a, int b)
         {
            int gcd = GCD(a, b);
             int teacher = a / gcd;
@@ -93,6 +93,13 @@ class School
 
         static void Main(string[] args)
         {
+            int teachers = 40;
+            int students = 5;
+            string ratio = "";
+            School TIY = new School(ratio);
+            Console.WriteLine(TIY.teacherToStudentRatio(teachers, students));
+            Console.ReadLine();
+                 
         }
     }
 }

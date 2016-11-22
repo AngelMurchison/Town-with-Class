@@ -35,7 +35,7 @@ namespace town
                 return $"{Address1}, {Address2}, {city}, {zip}";
             }
         }
-        public int CurrentOccupants { get; set; }
+        public int CurrentOccupants { get; set; } //incrementation, decrementation, evaluation has to be done FROM the read only property.
         public int IncreaseOccupants()
         {
             return CurrentOccupants += 1;
