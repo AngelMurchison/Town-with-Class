@@ -55,7 +55,33 @@ class School
         {
             return $"{BuildingType}: {Name}";
         }
-
+        int GCD(int[] args)
+        {
+            return args.Aggregate((gcd, arg) => GCD(gcd, arg));
+        }
+        void Simplify(int[] numbers)
+        {
+            int gcd = GCD(numbers);
+            for (int i = 0; i < numbers.Length; i++)
+                numbers[i] /= gcd;
+        }
+        int GCD(int a, int b)
+        {
+            while (b > 0)
+            {
+                int rem = a % b;
+                a = b;
+                b = rem;
+            }
+            return a;
+        }
+        string teacherToStudentRatio(int a, int b)
+        {
+           int gcd = GCD(a, b);
+            int teacher = a / gcd;
+            int student = b / gcd;
+            return $"{teacher}:{student}";
+        }
         static void Main(string[] args)
         {
         }
