@@ -12,6 +12,7 @@ class School
         {
             BuildingType = $"{BuildingType}";
         }
+
         public string Name { get; set; }
         public string BuildingType { get; set; }
         public int NumberOfRooms { get; set; }
@@ -27,6 +28,7 @@ class School
         public string Address2 { get; }
         public string city { get; }
         public string zip { get; }
+
         public string FullAddress
         {
             get
@@ -34,6 +36,7 @@ class School
                 return $"{Address1}, {Address2}, {city}, {zip}";
             }
         }
+
         public int CurrentOccupants { get; set; }
         public int IncreaseOccupants()
         {
@@ -43,6 +46,7 @@ class School
         {
             return CurrentOccupants -= 1;
         }
+
         public int NumberofStudents { get; set; }
         public bool InSession { get; set; }
         public int NumberofTeachers { get; set; }
@@ -51,14 +55,17 @@ class School
         {
             return $"{Name}";
         }
+
         public override string ToString()
         {
             return $"{BuildingType}: {Name}";
         }
+
         int GCD(int[] args)
         {
             return args.Aggregate((gcd, arg) => GCD(gcd, arg));
         }
+
         void Simplify(int[] numbers)
         {
             int gcd = GCD(numbers);
@@ -75,6 +82,7 @@ class School
             }
             return a;
         }
+
         string teacherToStudentRatio(int a, int b)
         {
            int gcd = GCD(a, b);
@@ -82,6 +90,7 @@ class School
             int student = b / gcd;
             return $"{teacher}:{student}";
         }
+
         static void Main(string[] args)
         {
         }

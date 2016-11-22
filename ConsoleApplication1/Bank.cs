@@ -8,9 +8,9 @@ namespace town
 {
     class Bank
     {
-        public Bank()
+        public Bank(string buildingtype)
         {
-            BuildingType = $"{BuildingType}";
+            this.BuildingType = buildingtype;
         }
         public string Name { get; set; }
         public string BuildingType { get; set; }
