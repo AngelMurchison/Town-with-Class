@@ -6,8 +6,16 @@ using System.Threading.Tasks;
 
 namespace town
 {
-   public class House : Building
+   public class House : Building, IBuildable
     {
+        string IBuildable.DisplayName(string Name)
+        {
+            return $"{Name}";
+        }
+        string IBuildable.ToString()
+        {
+            return $"{BuildingType}: {Name}";
+        }
         public House(string buildingtype):base(buildingtype)
         {
         }

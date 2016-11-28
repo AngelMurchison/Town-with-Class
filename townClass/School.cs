@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace town
 {
-public class School : Building
+public class School : Building, IBuildable
     {
         public School(string buildingtype):base(buildingtype) { }
   
@@ -14,12 +14,11 @@ public class School : Building
         public bool InSession { get; set; }
         public int NumberofTeachers { get; set; }
 
-        public string DisplayName()
+        string IBuildable.DisplayName(string Name)
         {
             return $"{Name}";
         }
-
-        public override string ToString()
+        string IBuildable.ToString()
         {
             return $"{BuildingType}: {Name}";
         }
