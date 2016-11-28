@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace town
 {
-   public class Bank
+    public abstract class Building
     {
-        public Bank(string buildingtype)
+
+        public Building(string buildingType)
         {
-            this.BuildingType = buildingtype;
+            buildingType = this.BuildingType;
         }
         public string Name { get; set; }
         public string BuildingType { get; set; }
@@ -21,7 +22,7 @@ namespace town
         public double Length { get; set; }
         public int SquareFootage { get; set; }
         public int Floors { get; set; }
-        public int BathRooms { get; }
+        public int BathRooms { get; set; }
         public int Volume { get; set; }
         public string Address1 { get; }
         public string Address2 { get; }
@@ -34,7 +35,7 @@ namespace town
                 return $"{Address1}, {Address2}, {city}, {zip}";
             }
         }
-        public int CurrentOccupants { get; set; }
+        public int CurrentOccupants { get; set; } //incrementation, decrementation, evaluation has to be done FROM the read only property.
         public int IncreaseOccupants()
         {
             return CurrentOccupants += 1;
@@ -42,27 +43,6 @@ namespace town
         public int DecreaseOccupants()
         {
             return CurrentOccupants -= 1;
-        }
-        private double AmountofMoney { get; set; }
-        public double DepositMoney(double deposit)
-        {
-            return AmountofMoney + deposit;
-        }
-        public double WithdrawMoney(double withdrawn)
-        {
-            return AmountofMoney - withdrawn;
-        }
-        public string DisplayName()
-        {
-            return $"{Name}";
-        }
-        public override string ToString()
-        {
-            return $"{BuildingType}: {Name}";
-        }
-
-        static void Main(string[] args)
-        {
         }
     }
 }
